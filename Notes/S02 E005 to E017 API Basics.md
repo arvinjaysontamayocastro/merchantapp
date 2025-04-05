@@ -65,3 +65,12 @@ dotnet build
 API Startup project
 	Run project: Terminal: cd API
 		dotnet run
+
+### S02 E008 Creating the Product Entity
+
+### S02 E09 Setting up entity framework
+	NUGET
+	Search Microsoft.EntityFrameworkCore.SqlServer
+		Add to Infrastructure.csproj
+	Search Microsoft.EntityFrameworkCore.Design
+		Add to API.csproj
