@@ -74,3 +74,23 @@ API Startup project
 		Add to Infrastructure.csproj
 	Search Microsoft.EntityFrameworkCore.Design
 		Add to API.csproj
+
+### S02 E10 Setting up SQL Server
+	Via Docker
+	or Via SQL Server and SSMS
+
+### S02 E11 Connecting to the SQL Server from the App
+	dotnet tool install --global dotnet-ef --version 8.0.6
+	dotnet ef
+
+### S02 E12 Configuraing the entities for the migration
+
+### S02 E13 Creating a products controller
+
+### S02 E14 Using postman to test our new API Endpoints
+
+### S02 E15 Adding the update and delete endpoints
+	ApiController Automatic model binding
+	[FromBody]
+
+### S02 E16 Saving our code into source control
