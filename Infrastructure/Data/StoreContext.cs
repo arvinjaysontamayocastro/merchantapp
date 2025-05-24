@@ -9,6 +9,7 @@ public class StoreContext(DbContextOptions options) : DbContext(options)
 {
     // define entity
     public DbSet<Product> Products { get; set; }
+    public DbSet<UserIdentity> UserIdentities { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

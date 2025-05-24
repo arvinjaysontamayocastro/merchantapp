@@ -94,3 +94,31 @@ API Startup project
 	[FromBody]
 
 ### S02 E16 Saving our code into source control
+	git status
+	git remote add origin https://github.com/TryCatchLearn/skinet-2024.git
+
+### S03 E17 Summary
+	Rule out the basics first
+		Restart the server!
+		Reproduce the problem
+		Typos!
+		Version issues
+
+	Gather information
+		Check logs
+		Chrome dev tools
+		Debugger
+	
+	Research
+		Search engine
+		AI (ChatGPT, CoPilot etc)
+		Compare with known working code
+		(https://github.com/trycatchlearn/skinet)
+	
+	Getting Help
+		Using the Q&A
+		Please be specific about the problem
+		Screenshots
+		Code snippets
+		What you have tried so far
+		What you have researched

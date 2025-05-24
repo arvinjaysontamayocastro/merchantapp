@@ -1,0 +1,26 @@
+[
+  {
+    "UserId": "1",
+    "FullName": "Jay",
+    "Email": "jay@gmail.com",
+    "SourceSystem": "Gmail",
+    "LastUpdated": "2019-06-23T17:16:40",
+    "IsActive": true
+  },
+  {
+    "UserId": "2",
+    "FullName": "Son",
+    "Email": "son@gmail.com",
+    "SourceSystem": "Gmail",
+    "LastUpdated": "2019-06-23T17:16:40",
+    "IsActive": true
+  },
+  {
+    "UserId": "3",
+    "FullName": "Vin",
+    "Email": "vin@gmail.com",
+    "SourceSystem": "Gmail",
+    "LastUpdated": "2019-06-23T17:16:40",
+    "IsActive": true
+  }
+]
