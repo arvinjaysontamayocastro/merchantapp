@@ -1,0 +1,37 @@
+# S04 The Specification Pattern
+	Introduction
+
+## S04 E028
+    Creating a generic repository
+    Specification Pattern
+    Using the Specifation Pattern
+    Using the Debugger
+    Shaping the Data
+
+    Been arond since C# 2.0 2002
+    Help avoid duplicate code
+    Provide type safety
+
+## S04 E029 Creating a generic repository
+
+## S04 E030 Implementing the generic repository methods
+
+## S04 E031 Using the generic repository in the controller
+
+## S04 E032 Introduction to the specification pattern
+    Generic Repository is an anti-pattern
+        FinAsync(Expression<Func<T, bool>> query)
+
+    Describes a query in an object
+    Returns an IQueryable<T>
+    Generic List method takes specification as parameter
+    Specification can have meaningful name
+        OrdersWithItemsAndSortingSpecification
+
+    Specification
+
+    Generic Repository
+        ListAsync(specification)
+            spec
+            IQueryable<T>
+        Evaluator

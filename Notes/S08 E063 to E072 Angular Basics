@@ -1,0 +1,27 @@
+# S07 Angular Basics
+
+# S07 E063 Introduction
+    Adding components
+    Http client module
+    Observables
+    Typescript
+
+    Goal:
+
+    To be able to use the http client to retrieve data from the API.
+
+    To understand the basics of observables and Typescript.
+
+# S07 E064 Adding a Header component
+    client / app
+        core : services guards interceptors
+        shared : shared components, directives, models
+        features : shop, shopping cart, checkout
+        layout : header, footer
+
+        layout
+            > component class
+            @Component decorator
+
+            cli ng help
+            cli ng generate help
