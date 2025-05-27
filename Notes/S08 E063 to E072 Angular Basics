@@ -12,7 +12,7 @@
 
     To understand the basics of observables and Typescript.
 
-# S07 E064 Adding a Header component
+# S07 E064 Setting up the folder strucdture and creating components
     client / app
         core : services guards interceptors
         shared : shared components, directives, models
@@ -25,3 +25,62 @@
 
             cli ng help
             cli ng generate help
+
+# S07 E065 Adding a Header component
+
+# S07 E066 Improving the header component
+
+# S07 E067 Making http requests in Angular
+
+# S07 E068 Introduction to observables
+    Observable
+        a sequence of items that arrive asynchronously over time.
+
+    Promises
+        has one pipeline
+        typically used with async data return
+        not easy to cancel
+    
+    Observable
+        are cancellable
+        stream data in multiple pipelines
+        array like operations
+        can be created from other sources like events
+        they can be subscribed to
+    
+    HTTP, Observables and RxJS
+        HTTP Get requests from ShopService
+        Angular Service receives the observable and cast it into Products array
+        Subscribe to the Observable from the component
+        Assign the Products array to a local variable for use in the components template
+
+    RxJS
+        Reactive extensions for Javascript
+        Utility library for working with observables, similar to lodash or underscore for javascript objects and arrays
+        Uses the pipe() method to chain RxJS operators together
+
+# S07 E069 Introduction to TypeScript
+    Typescript
+        Strong Typing
+        Object Orientated
+        Better Intellisense
+        Access Modifiers
+        Future Javascript features
+        Catches silly mistakes in developmenet
+        3rd party libraries
+        Easy to learn if you know JS
+
+# S07 E070 Typescript demo
+    npx tsc src/demo.ts
+    node src/demo.js
+
+# S07 E071 Using Types in our Project
+
+# S07 E072 Summary
+    Goal:
+
+    To be able to use the http client to retrieve data from the API.
+
+    To understand the basics of observables and TypeScript.
+
+    

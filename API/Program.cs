@@ -1,5 +1,6 @@
-using System.Security.Authentication.ExtendedProtection;
+using API.Middleware;
 using Core.Interfaces;
+using Infrastructure;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,7 +21,18 @@ builder.Services.AddDbContext<StoreContext>(opt =>
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IUserIdentityRepository, UserIdentityRepository>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddCors();
+
 var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+app.UseMiddleware<ExceptionMiddleware>();
+
+app.UseCors(x => x.AllowAnyHeader()
+    .AllowAnyMethod()
+    .AllowCredentials()
+    .AllowAnyOrigin()
+    .WithOrigins("http://localhost:4200", "https://localhost:4200", "https://localhost"));
 
 app.MapControllers();
 

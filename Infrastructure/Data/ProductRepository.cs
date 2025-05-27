@@ -1,4 +1,3 @@
-using System;
 using Core.Entities;
 using Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -29,19 +28,17 @@ public class ProductRepository(StoreContext context) : IProductRepository
         return await context.Products.FindAsync(id);
     }
 
-    public async Task<IReadOnlyList<Product>> GetProductsAsync(string? brand, string? type, string? sort)
+    public async Task<IReadOnlyList<Product>> GetProductsAsync(string? brand,
+        string? type, string? sort)
     {
         var query = context.Products.AsQueryable();
 
         if (!string.IsNullOrWhiteSpace(brand))
-        {
             query = query.Where(x => x.Brand == brand);
-        }
 
         if (!string.IsNullOrWhiteSpace(type))
-        {
             query = query.Where(x => x.Type == type);
-        }
+
 
         query = sort switch
         {
